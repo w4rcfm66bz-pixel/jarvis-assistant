@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080b12">
+  <title>JARVIS — Personal AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">J</span><div><strong>JARVIS</strong><small>PERSONAL INTELLIGENCE</small></div></div>
+      <button class="new-chat" id="newChat"><span>＋</span> New conversation</button>
+      <div class="side-label">WORKSPACE</div>
+      <button class="nav-item active"><span>◈</span> Assistant</button>
+      <button class="nav-item" id="websiteShortcut"><span>⌘</span> Website builder <em>SOON</em></button>
+      <button class="nav-item" id="tasksShortcut"><span>▤</span> Tasks <em>SOON</em></button>
+      <div class="sidebar-bottom"><div class="status-dot"></div><span>LOCAL INTERFACE ONLINE</span><span class="version">v1.0</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-brand" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">WORKSPACE <span>/</span> <b>ASSISTANT</b></div>
+        <div class="top-right"><span class="secure"><i></i> PRIVATE SESSION</span><div class="avatar">H</div></div>
+      </header>
+
+      <section class="content">
+        <div class="welcome">
+          <div class="eyebrow"><span class="pulse"></span> SYSTEM READY</div>
+          <h1>Good to see you<span class="blue">.</span></h1>
+          <p>Your personal intelligence, ready when you are.</p>
+        </div>
+
+        <div class="core-wrap">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="core"><div class="core-inner"><span>J</span></div></div>
+          <div class="core-caption">JARVIS <span>AI CORE</span></div>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-card" data-prompt="Help me plan my day."><span class="quick-icon">◷</span><b>Plan my day</b><small>Organise priorities</small><span class="arrow">↗</span></button>
+          <button class="quick-card" data-prompt="Help me brainstorm and plan a website."><span class="quick-icon">⌘</span><b>Create a website</b><small>Turn an idea into a plan</small><span class="arrow">↗</span></button>
+          <button class="quick-card" data-prompt="Give me three useful things I can automate."><span class="quick-icon">✧</span><b>Explore ideas</b><small>Find smarter workflows</small><span class="arrow">↗</span></button>
+        </div>
+
+        <section class="chat-panel">
+          <div class="chat-heading"><div><span class="live-dot"></span><b>Conversation</b><small>ENCRYPTED IN TRANSIT WHEN HOSTED WITH HTTPS</small></div><button id="clearChat" class="clear-btn">CLEAR</button></div>
+          <div class="messages" id="messages" aria-live="polite">
+            <div class="message assistant"><div class="message-avatar">J</div><div class="bubble"><b>JARVIS</b><p>Systems online. How can I help you today?</p><time>JUST NOW</time></div></div>
+          </div>
+          <form class="composer" id="chatForm">
+            <textarea id="prompt" rows="1" placeholder="Message JARVIS…" aria-label="Message JARVIS"></textarea>
+            <button type="button" class="icon-btn mic-btn" id="micBtn" title="Voice input" aria-label="Voice input">⌁</button>
+            <button type="submit" class="send-btn" id="sendBtn" aria-label="Send message">↑</button>
+          </form>
+          <div class="composer-note"><span>JARVIS CAN MAKE MISTAKES. CHECK IMPORTANT INFORMATION.</span><button id="voiceToggle" class="voice-toggle">VOICE REPLIES <b>OFF</b></button></div>
+        </section>
+        <footer>JARVIS PERSONAL AI <span>·</span> BUILT FOR YOUR WORKFLOW</footer>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
